@@ -46,6 +46,7 @@ public class Main {
     }
 
     public static void listAllItems() {
+        if(library.isEmpty()) System.out.println("No items available in library.");
         for (LibraryItem item : library) {
             System.out.println(item);
         }
